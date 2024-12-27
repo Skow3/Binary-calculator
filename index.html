@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- CREATED BY : SHIVAM KUMAR -->
+<!-- HTML FILE -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Binary Calculator</title>
+</head>
+<body>
+<div id="vv">
+    <h1>LOGICAL AND BITWISE CALCULATOR</h1>
+</div>
+<div class="container">
+    <div id="display">
+        <input type="submit" id="operand" value="0101">
+    </div>
+    <div class="options">
+        <label><input type="radio" name="displayOption" value="binary" checked>Binary only</label>
+        <label><input type="radio" name="displayOption" value="octal"> Octal only</label>
+        <label><input type="radio" name="displayOption" value="both"> Binary and Decimal</label>
+        <input type="button" id="s" class="s" value="Step-wise Explanation" onclick="alert('ANIMATIONS ARE ENABLED ON DEFAULT')">  <!-- Sir i wasn't able to understand the function of this button.. so i applied the animation by default -->
+    </div>
+    <div class="buttons">
+        <div class="row">
+            <input type="button" id="a" class="a" value="0" onclick="appendValue('0')">
+            <input type="button" id="b" class="a" value="1" onclick="appendValue('1')">
+            <input type="button" id="c" class="l" value="=" onclick="calculate()">
+            <input type="button" id="d" class="l" value="Delete" onclick="deletel()">
+            <input type="button" id="e" class="l" value="Reset" onclick="reset()">
+        </div>
+        
+        <div class="row">
+            <input type="button" id="g" class="l" value="Bitwise AND" onclick="setOperation('&')">
+            <input type="button" id="h" class="l" value="Bitwise OR" onclick="setOperation('|')">
+            <input type="button" id="i" class="l" value="Prev Operation" onclick="prevOperation()">
+            <input type="button" id="f" class="l" value="Next Operation" onclick="nextOperation()">
+        </div>
+        <div class="row">
+            <input type="button" id="j" class="l" value="Bitwise XOR" onclick="setOperation('^')">
+            <input type="button" id="k" class="l" value="Bitwise NOT" onclick="setOperation('~')">
+            <input type="button" id="l" class="l" value="First Operation" onclick="firstOperation()">
+            <input type="button" id="m" class="l" value="Last Operation" onclick="lastOperation()">
+        </div>
+        <div class="row">
+            <input type="button" id="n" class="a" value="Right Shift" onclick="setOperation('>>')">
+            <input type="button" id="o" class="a" value="Left Shift" onclick="setOperation('<<')">
+            <input type="button" id="p" class="a" value="Unsigned Right Shift" onclick="setOperation('>>>')">
+        </div>
+        <div class="row">
+            <input type="button" value="1's Complement" onclick="setOperation('_')">  <!-- using _ bcs it will not be shown -->
+            <input type="button" value="2's Complement" onclick="setOperation('.')">  <!-- using . bcs it will not be shown -->
+            <input type="button" value="Multiplication" onclick="setOperation('*')">
+            <input type="button" value="Division" onclick="setOperation('/')">
+        </div>
+    </div>
+</div>
+<marquee><pre>SKOWTECH                                                                                                      SKOWTECH                                                                                                      SKOWTECH                                                                                                      SKOWTECH<pre></marquee>
+</body>
+</html>
+
+

@@ -1,0 +1,114 @@
+/*CREATED BY : SHIVAM KUMAR ROLL NO: 230103044
+  STARTED ON : 1st Sept
+  COMPLETED ON: 7th Sept 10:36 a.m
+  STYLESHEET FILE
+*/
+      body {
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #f0f0f0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 5px 5px 2.5px 6px lightblue;
+        }
+
+        #operand {
+            color: black;
+            width: 65rem; /* I'm using rem so that the size is relative acc to screen size*/
+            height: 5rem;
+            margin-bottom: 1.5rem; 
+            text-align: right;
+            font-size: 5rem;
+            border-radius: 10%;
+            background-color: #E1F5FE;
+            border-color: black;
+            box-shadow: 0px 5px black;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .buttons input[type="button"] {
+            width: 15rem;
+            height: 4rem;
+            border-radius: 10%;
+            padding: 0;
+            font-size: 1.5rem;
+            background-color: #E0E0E0;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        #b, #a {
+            width: 7.5rem;
+            height: 4rem;
+            font-size: 1.5rem;
+        }
+        #s {
+            width: 20rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: white;
+            background: darkblue;
+        }
+        #p {
+            width: 31rem;
+        }
+
+        .buttons input[type="button"]:hover {
+            background-color: #212121;
+            color: #E0E0E0;
+        }
+
+        #vv {
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: 1px;
+            left: 17%;
+            font-size: 60px;
+            text-align: center;
+            text-shadow: 5px 5px lightblue;
+            animation: blink 3s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+                text-shadow: 5px 5px lightblue;
+            }
+            25% {
+                opacity: 1;
+                text-shadow: 5px 5px orange;
+            }
+            50% {
+                text-shadow: 5px 5px red;
+            }
+            75% {
+                text-shadow: 5px 5px pink;
+            }
+            100% {
+                opacity: 1;
+                text-shadow: 5px 5px lightblue;
+            }
+        }
